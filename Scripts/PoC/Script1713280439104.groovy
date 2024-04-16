@@ -30,7 +30,7 @@ public static void openBrowserWithExtension() {
     ChromeOptions options = new ChromeOptions()
     String pathToExtension = "/absolute/path/to/katalon-g5/packages/recorder-webapp/build"
     options.addArguments("--load-extension=" + pathToExtension)
-	System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+    System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
     WebDriver driver = new ChromeDriver(options)
     DriverFactory.changeWebDriver(driver)
 }
